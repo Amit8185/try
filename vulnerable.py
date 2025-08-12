@@ -1,5 +1,5 @@
-import subprocess
+def connect_to_db():
+    password="SuperSecret1234"
+    print(f"Connecting to db with password:{password}")
 
-def run_command(user_input):
-    # Dangerous use of shell=True leading to command injection vulnerability
-    subprocess.call(user_input, shell=True)
+connect_to_db()
